@@ -1,0 +1,109 @@
+ <!DOCTYPE html>
+<!--
+Couple of things.. 1. Its not obivious which option I choose (Friend/computer, X/O). 2. I would make the computer smarter, it makes no effort to block at all. I won 3 in a row with no effort. Style wise, I like it, it looks good to the eye
+
+Oh I guess theres a mild shadow for friend/computer... but still I'd make it darker/more obivious
+
+make a delay when against computer x delay second o
+
+https://en.wikipedia.org/wiki/Quantum_tic-tac-toe
+-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+
+<section id="settings" class="section has-text-centered">
+  <div class="container">
+    <div class="notification is-warning">
+      <div id="playerType">
+        <h2 class="subtitle">Choose opponent:
+        </h2>
+        <button id="p0" class="choice0 button is-dark">Friend
+        </button> 
+        <button id="p1" class="choice0 button">Computer
+        </button>
+      </div>
+      <br>
+      <div id="chooseChar">
+        <h2 class="subtitle">Choose your marker:
+        </h2>
+        <button id="c0" class="choice2 button is-dark" title="click to choose X's">X
+        </button> 
+        <button id="c1" class="choice2 button is-dark" title="click to choose O's">O
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="game" class="section has-text-centered">
+  <div class="container content">
+    <div id="textHolder" class="notification is-dark">
+      <p id="text">
+      </p>
+    </div>
+    <div id="tictactoe" class="notification">
+      <div class="columns is-mobile">
+        <div class="column">
+          <article class="square notification is-dark" id="0">
+            <div class="content">
+            </div>
+          </article>
+          <article class="square notification is-dark" id="3">
+            <div class="content">
+            </div>
+          </article>
+          <article class="square notification is-dark" id="6">
+            <div class="content">
+            </div>
+          </article>
+        </div>
+        <div class="column">
+          <article class="square notification is-dark" id="1">
+            <div class="content">
+            </div>
+          </article>
+          <article class="square notification is-dark" id="4">
+            <div class="content">
+            </div>
+          </article>
+          <article class="square notification is-dark" id="7">
+            <div class="content">
+            </div>
+          </article>
+        </div>
+        <div class="column">
+          <article class="square notification is-dark" id="2">
+            <div class="content">
+            </div>
+          </article>
+          <article class="square notification is-dark" id="5">
+            <div class="content">
+            </div>
+          </article>
+          <article class="square notification is-dark" id="8">
+            <div class="content">
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div class="notification is-warning">
+      <button id="restart" class="button is-dark">restart
+      </button>
+    </div>
+  </div>
+</section>
+
+</body>
+</html> 

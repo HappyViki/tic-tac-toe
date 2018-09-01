@@ -1,0 +1,31 @@
+body, button {
+	font-family: 'Sedgwick Ave Display', cursive;
+	font-size: 32px !important;
+}
+.square .content {
+	height: 200px !important;
+}
+
+#game {
+    display: none;
+}
+
+.opp {
+  border: 5px solid blue;
+}
+@media only screen and (max-width: 500px) {
+*, button {
+font-size: 16px !important;
+}
+#settings .subtitle {
+margin: 8px;
+}
+#textHolder, #tictactoe {
+margin-bottom: 8px !important;
+padding: 8px !important;
+
+}
+#game {
+padding: 16px !important;
+}
+}
